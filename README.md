@@ -36,7 +36,7 @@ git clone https://github.com/NSS-Data-Engineering-Oct2025/Sobiya_K_DE_Capstone.g
 2. Install dependencies
 uv add requests boto3 pandas psycopg2-binary python-dotenv dbt-postgres streamlit
 
-3. Copy .env.example to .env and fill in your credentials
+3. Create a .env file and fill in your credentials using the variables shown in the README
 
 4. Start Docker
 docker-compose up --build
