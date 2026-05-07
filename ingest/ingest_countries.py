@@ -10,8 +10,8 @@ load_dotenv()
 # S3 Config
 S3_BUCKET = os.getenv("S3_BUCKET_NAME")
 S3_PREFIX = os.getenv("S3_PREFIX")
-AWS_PROFILE = os.getenv("AWS_PROFILE")
 AWS_REGION = os.getenv("AWS_REGION")
+AWS_PROFILE = os.getenv("AWS_PROFILE")
 REST_COUNTRIES_URL = os.getenv("REST_COUNTRIES_URL")
 
 # List of countries to fetch
@@ -48,8 +48,8 @@ def ingest_countries():
 
     # Save to S3
     session = boto3.Session(
-        profile_name=AWS_PROFILE,
-        region_name=AWS_REGION
+    profile_name=AWS_PROFILE,
+    region_name=AWS_REGION
     )
     s3 = session.client("s3")
 

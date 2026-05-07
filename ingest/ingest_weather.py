@@ -22,11 +22,9 @@ def ingest_weather(earthquakes):
     weather_data = []
 
     for quake in earthquakes:
-        # Get coordinates from each earthquake
         lon, lat, depth = quake["geometry"]["coordinates"]
         quake_id = quake["id"]
 
-        # Call Open-Meteo API
         params = {
             "latitude": lat,
             "longitude": lon,
@@ -46,7 +44,6 @@ def ingest_weather(earthquakes):
         else:
             print(f"Failed to get weather for {quake_id}: {response.status_code}")
 
-    # Save to S3
     session = boto3.Session(
         profile_name=AWS_PROFILE,
         region_name=AWS_REGION

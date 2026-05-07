@@ -26,7 +26,6 @@ def ingest_earthquakes():
         earthquakes = data["features"]
         print(f"Fetched {len(earthquakes)} earthquakes")
 
-        # Connect to S3 using SSO profile
         session = boto3.Session(
             profile_name=AWS_PROFILE,
             region_name=AWS_REGION
