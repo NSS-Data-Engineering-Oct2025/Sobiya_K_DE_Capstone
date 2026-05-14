@@ -5,6 +5,11 @@ A fully automated data engineering pipeline that collects live earthquake data d
 
 ---
 
+## Presentation
+https://canva.link/hi4mt397e3zetia
+
+---
+
 ## Data Question
 
 **How do earthquake frequency and magnitude vary by region over time?**
@@ -117,6 +122,7 @@ uv run pytest earthquake_dbt/tests/ -v
 ---
 
 ## Project Structure
+```
 Sobiya_K_DE_Capstone/
 ├── dags/
 │   └── earthquake_dag.py        # Airflow DAG
@@ -134,7 +140,7 @@ Sobiya_K_DE_Capstone/
 ├── dockerfile
 ├── .env.example
 └── README.md
-
+```
 ---
 
 ## Key Findings
