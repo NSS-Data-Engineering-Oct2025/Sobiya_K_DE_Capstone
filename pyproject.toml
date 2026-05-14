@@ -10,6 +10,7 @@ dependencies = [
     "dbt-postgres>=1.10.0",
     "pandas>=3.0.2",
     "psycopg2-binary>=2.9.12",
+    "pytest>=9.0.3",
     "python-dotenv>=1.2.2",
     "requests>=2.33.1",
     "ruff>=0.15.12",
